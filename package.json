@@ -1,0 +1,31 @@
+{
+  "name": "dsh-furniture-fireload",
+  "version": "1.1.1",
+  "description": "家具火灾荷载工作台：整合 Fireprediction（重量/体积预测）与 furniture-material-tool（材质细化与单件家具火灾荷载），并支持把 JEV 判定切换为 DeepSeek 模型。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "engines": {
+      "dsh": ">=0.1.7-rc.1"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web"
+    }
+  },
+  "license": "Apache-2.0",
+  "files": [
+    "lib",
+    "py",
+    "cordis.patch.yml",
+    "README.md"
+  ]
+}

@@ -1,0 +1,7 @@
+# dsh-furniture-fireload bundle patch: inserts its plugin row into the web plugin roster.
+# The single row mounts BOTH halves: the host side (analysis jobs, Python bridge,
+# decision-model routing, HTTP routes under /api/furniture-fireload) and the
+# browser side (the workbench panel, served from this package's lib/client.js).
+- insert:
+    - id: furniture-fireload
+      name: 'dsh-furniture-fireload'

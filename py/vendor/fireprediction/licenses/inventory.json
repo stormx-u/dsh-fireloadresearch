@@ -1,0 +1,97 @@
+[
+  {
+    "distribution": "numpy",
+    "version": "2.4.4",
+    "role": "runtime or executable packaging",
+    "license_files": [
+      "licenses/numpy/numpy-2.4.4.dist-info/licenses/LICENSE.txt",
+      "licenses/numpy/numpy-2.4.4.dist-info/licenses/numpy/_core/include/numpy/libdivide/LICENSE.txt",
+      "licenses/numpy/numpy-2.4.4.dist-info/licenses/numpy/_core/src/common/pythoncapi-compat/COPYING",
+      "licenses/numpy/numpy-2.4.4.dist-info/licenses/numpy/_core/src/highway/LICENSE",
+      "licenses/numpy/numpy-2.4.4.dist-info/licenses/numpy/_core/src/multiarray/dragon4_LICENSE.txt",
+      "licenses/numpy/numpy-2.4.4.dist-info/licenses/numpy/_core/src/npysort/x86-simd-sort/LICENSE.md",
+      "licenses/numpy/numpy-2.4.4.dist-info/licenses/numpy/_core/src/umath/svml/LICENSE",
+      "licenses/numpy/numpy-2.4.4.dist-info/licenses/numpy/fft/pocketfft/LICENSE.md",
+      "licenses/numpy/numpy-2.4.4.dist-info/licenses/numpy/linalg/lapack_lite/LICENSE.txt",
+      "licenses/numpy/numpy-2.4.4.dist-info/licenses/numpy/ma/LICENSE",
+      "licenses/numpy/numpy-2.4.4.dist-info/licenses/numpy/random/LICENSE.md",
+      "licenses/numpy/numpy-2.4.4.dist-info/licenses/numpy/random/src/distributions/LICENSE.md",
+      "licenses/numpy/numpy-2.4.4.dist-info/licenses/numpy/random/src/mt19937/LICENSE.md",
+      "licenses/numpy/numpy-2.4.4.dist-info/licenses/numpy/random/src/pcg64/LICENSE.md",
+      "licenses/numpy/numpy-2.4.4.dist-info/licenses/numpy/random/src/philox/LICENSE.md",
+      "licenses/numpy/numpy-2.4.4.dist-info/licenses/numpy/random/src/sfc64/LICENSE.md",
+      "licenses/numpy/numpy-2.4.4.dist-info/licenses/numpy/random/src/splitmix64/LICENSE.md"
+    ]
+  },
+  {
+    "distribution": "scipy",
+    "version": "1.17.1",
+    "role": "runtime or executable packaging",
+    "license_files": [
+      "licenses/scipy/scipy-1.17.1.dist-info/LICENSE.txt"
+    ]
+  },
+  {
+    "distribution": "Pillow",
+    "version": "12.1.1",
+    "role": "runtime or executable packaging",
+    "license_files": [
+      "licenses/Pillow/pillow-12.1.1.dist-info/licenses/LICENSE"
+    ]
+  },
+  {
+    "distribution": "onnxruntime",
+    "version": "1.24.4",
+    "role": "runtime or executable packaging",
+    "license_files": []
+  },
+  {
+    "distribution": "scikit-learn",
+    "version": "1.8.0",
+    "role": "runtime or executable packaging",
+    "license_files": [
+      "licenses/scikit-learn/scikit_learn-1.8.0.dist-info/licenses/COPYING"
+    ]
+  },
+  {
+    "distribution": "joblib",
+    "version": "1.5.3",
+    "role": "runtime or executable packaging",
+    "license_files": [
+      "licenses/joblib/joblib-1.5.3.dist-info/licenses/LICENSE.txt"
+    ]
+  },
+  {
+    "distribution": "threadpoolctl",
+    "version": "3.6.0",
+    "role": "runtime or executable packaging",
+    "license_files": [
+      "licenses/threadpoolctl/threadpoolctl-3.6.0.dist-info/licenses/LICENSE"
+    ]
+  },
+  {
+    "distribution": "pyinstaller",
+    "version": "6.22.3",
+    "role": "runtime or executable packaging",
+    "license_files": [
+      "licenses/pyinstaller/pyinstaller-6.22.3.dist-info/licenses/COPYING.txt"
+    ]
+  },
+  {
+    "distribution": "torch",
+    "version": "2.11.0+cu128",
+    "role": "conversion provenance only",
+    "license_files": [
+      "licenses/torch/torch-2.11.0+cu128.dist-info/LICENSE",
+      "licenses/torch/torch-2.11.0+cu128.dist-info/NOTICE"
+    ]
+  },
+  {
+    "distribution": "torchvision",
+    "version": "0.26.0+cu128",
+    "role": "conversion provenance only",
+    "license_files": [
+      "licenses/torchvision/torchvision-0.26.0+cu128.dist-info/LICENSE"
+    ]
+  }
+]

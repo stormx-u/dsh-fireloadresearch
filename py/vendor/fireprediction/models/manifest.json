@@ -1,0 +1,142 @@
+{
+  "schema_version": "1.0",
+  "application": "Fireprediction",
+  "version": "1.0.0",
+  "runtime": "onnxruntime CPU + sklearn; inference does not import torch",
+  "weight_categories": [
+    "柜子",
+    "桌子",
+    "床",
+    "架子",
+    "椅子",
+    "沙发",
+    "长凳",
+    "凳子",
+    "扶手椅",
+    "躺椅",
+    "家具套装",
+    "配件及寝具"
+  ],
+  "volume_profiles": {
+    "general": {
+      "default": true,
+      "label": "通用最佳模型"
+    },
+    "cabinet_experimental": {
+      "default": false,
+      "label": "柜子实验版"
+    }
+  },
+  "artifacts": [
+    {
+      "path": "volume/cabinet_evaluation.json",
+      "sha256": "1da1739593c488fb3f730900f5712c08e7c8b718b8479b223bdc53815d63f2b6",
+      "bytes": 31024
+    },
+    {
+      "path": "volume/cabinet_head.onnx",
+      "sha256": "df015a10c271df4ea62ff0ef4b97322ca778d06b468c79c7a19fdd4f9c52b03d",
+      "bytes": 1589595
+    },
+    {
+      "path": "volume/cabinet_model_info.json",
+      "sha256": "295154bbce6e36a9c8e16396b996ecc84da511e9691aec236782c37c8da28ae8",
+      "bytes": 3002
+    },
+    {
+      "path": "volume/cabinet_README.md",
+      "sha256": "301966da1d242f43c918eb9d81b441ef3d060aa82bdbba39c964ebf807efb4e7",
+      "bytes": 3499
+    },
+    {
+      "path": "volume/cabinet_router.npz",
+      "sha256": "b19f29c201ab7d11199ab518d773e2de60d3a562f4c0d41478a1a40c0ad3d20f",
+      "bytes": 37866
+    },
+    {
+      "path": "volume/general.onnx",
+      "sha256": "14bd51756f9cb965d2c7f93d62cce0199ac124770745c68672ae7fe6e1117184",
+      "bytes": 112944392
+    },
+    {
+      "path": "volume/general_evaluation.json",
+      "sha256": "a3d2e66c671ce1222d8940e0a78c1d99e93267983080934444a58a4a47b729f3",
+      "bytes": 3686
+    },
+    {
+      "path": "volume/general_model_info.json",
+      "sha256": "7610d2d956cc61e025ec897ba404a7c4bed9bb88e6571436651fbc55124ee3a1",
+      "bytes": 4723
+    },
+    {
+      "path": "volume/general_README.md",
+      "sha256": "b40bc99fa3d73e5abdcddf52471f2f7cb0772444d2442cd2598d5963d75432ff",
+      "bytes": 2368
+    },
+    {
+      "path": "volume/licenses/cabinet/ABO_CC-BY-4.0.txt",
+      "sha256": "419896aea50c15d6e40c5b4baf4bd346f78223b9a354c7357ad00262afdc08ec",
+      "bytes": 14527
+    },
+    {
+      "path": "volume/licenses/cabinet/ABO_images_attribution.md",
+      "sha256": "343b342427abca798202af0a6fa583bce33f022847026e7ada48978d109687a5",
+      "bytes": 4081
+    },
+    {
+      "path": "volume/licenses/cabinet/README.md",
+      "sha256": "27da086404cfc45a7f94967820f20b00e1a0b1aaf77a4f3d916799264a73a6f3",
+      "bytes": 426
+    },
+    {
+      "path": "volume/licenses/cabinet/training_attribution.json",
+      "sha256": "1aa7565abf96e0ec1a54dc29eb6132198d23dac0d32661de6b012352f4408ef0",
+      "bytes": 891697
+    },
+    {
+      "path": "volume/licenses/general/ABO_CC-BY-4.0.txt",
+      "sha256": "419896aea50c15d6e40c5b4baf4bd346f78223b9a354c7357ad00262afdc08ec",
+      "bytes": 14527
+    },
+    {
+      "path": "volume/licenses/general/ABO_images_attribution.md",
+      "sha256": "343b342427abca798202af0a6fa583bce33f022847026e7ada48978d109687a5",
+      "bytes": 4081
+    },
+    {
+      "path": "weight/fit_stats.json",
+      "sha256": "524819e7ca68056313db23f43fce85f9784147b7f0a3a04b15b4bdf52799ec53",
+      "bytes": 499
+    },
+    {
+      "path": "weight/fusion.joblib",
+      "sha256": "326dd6debc50e7ba7ec458947446c4403874b7a932d6774cc374a7f375e0b308",
+      "bytes": 282339060
+    },
+    {
+      "path": "weight/image_encoder.onnx",
+      "sha256": "323ccfd09fa41d3015978d9d989dc552b0dced5a52a6cb0ba8d1cdc2cc201d4c",
+      "bytes": 85121906
+    },
+    {
+      "path": "weight/model_card.json",
+      "sha256": "d704ca2f5c01af0290ae357ca35d5448b268f9dbd8e943cb95ee8a7101703e56",
+      "bytes": 4772
+    },
+    {
+      "path": "weight/source_features.py",
+      "sha256": "827adf4b397cd774bea4e78fd4bcc478eca5628a244de5a1eaf8b9271fc2c01b",
+      "bytes": 3108
+    },
+    {
+      "path": "weight/source_README.md",
+      "sha256": "3bc2453028604ab99301c9d2ee641270cf008895bd5f0602ddf5831f9c327f55",
+      "bytes": 7690
+    },
+    {
+      "path": "volume/model_info.json",
+      "sha256": "7610d2d956cc61e025ec897ba404a7c4bed9bb88e6571436651fbc55124ee3a1",
+      "bytes": 4723
+    }
+  ]
+}
