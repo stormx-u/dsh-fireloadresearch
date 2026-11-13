@@ -2,8 +2,14 @@ node_modules/
 __pycache__/
 *.pyc
 .runtime/
+**/.runtime/
 .tmp/
 dist/
+archive/
+generations/
 *.log
+*.bin
+settings.json
+*.local.json
 .DS_Store
 Thumbs.db

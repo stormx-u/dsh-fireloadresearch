@@ -50,6 +50,31 @@ dsh plugin --profile web add link:D:\dsh-fireloadresearch
 > 每次 `install` 会把整份内容复制进新的 generation，确认新版本可用后可清理
 > `profiles\.generations\live\` 下的旧目录。
 
+### 密钥放在哪里（不会进仓库）
+
+插件**不会**把任何密钥写进自己的目录，也不会写进导出的结果或 Excel：
+
+| 密钥 | 存放位置 | 说明 |
+| --- | --- | --- |
+| 判定/复核用的 OpenRouter 密钥、自定义模型密钥、DeepSeek API 直连密钥 | `%LOCALAPPDATA%\dsh-furniture-fireload\settings.json` | 只在本机；面板「0 自定义模型」与各步骤下拉里填的就是这套配置 |
+| 批量任务的请求文件 `batches\<id>\request.json` | `%LOCALAPPDATA%\dsh-furniture-fireload\batches\` | 写盘前会把 `models.*.apiKey` 清空，只留地址与模型名 |
+| 材料分析模块的 DPAPI 文件 `.runtime\openrouter-key.bin` | 运行时目录（默认 `%LOCALAPPDATA%` 下） | 仅在未填密钥时作为兜底读取；`.runtime/` 已被 `.gitignore` 排除 |
+
+仓库侧还有两道防线：
+
+```bash
+# 1) 提交前自动扫描（.gitignore 之外的第二道保险）
+git config core.hooksPath .githooks      # 启用 .githooks/pre-commit
+node scripts/check_secrets.mjs           # 也可以手动跑，命中会打印文件:行号并退出 1
+
+# 2) 二进制/运行时目录整体忽略
+cat .gitignore   # .runtime/ **/.runtime/ *.bin settings.json *.log 等
+```
+
+扫描规则覆盖：`sk-or-v1-`（OpenRouter）、`sk-`（DeepSeek/OpenAI 形态）、
+`Authorization: Bearer` 令牌、`OPENROUTER_API_KEY=` 之类的赋值、以及
+`apiKey: "<16 位以上字面量>"`。命中时不打印完整密钥（只显示前 8 位）。
+
 ### 许可与来源
 
 * 插件代码：Apache-2.0（见 `LICENSE`）。

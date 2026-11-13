@@ -1,0 +1,3 @@
+#!/bin/sh
+# Block API keys from being committed (requires node in PATH).
+node scripts/check_secrets.mjs || exit 1
